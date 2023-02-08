@@ -3,10 +3,9 @@ import Link from 'next/link'
 import React from 'react'
 const Feed = () => {
   return (
-    <feed>
-
-<div className='flex bg-blue-400 font-semibold  m-1 justify-between text-white border'>
- <h3 className='p-0'>Q.No:1</h3> 
+    <>
+    <div className='flex bg-blue-400 font-semibold m-0  text-white border justify-between'>
+ <h3 className='flex bg-blue-400 font-semibold  m-2 text-white p-1'>Q.No:1</h3> 
  <label for="pet-select">View in:
 
 <select className='m-2 text-black bg-white'>
@@ -18,14 +17,17 @@ const Feed = () => {
 </select>
 </label>
 </div>
-<div className='flex p-3 border border-gray-500'>
-    <div className='flex flex-row text-xl p-3 flex-grow'>
-        <h1 className='flex-col text-blue-700'>Question Instruction:</h1>
+  <feed className="flex justify-between">
+<div className='flex px-2 m-2 border border-gray-500'>
+    <div className='flex flex-row text-xl '>
+        <h1 className='flex px-1 p-2 m-2 text-blue-700'>Question Instruction:</h1>
     
-        <p className='flex flex-col p-2 mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptas natus culpa ratione iste magnam veritatis dolores in dignissimos quod ad nihil totam assumenda temporibus, sed amet? Repellendus, sed ut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corporis blanditiis ab repellendus fugiat est fugit nesciunt esse asperiores quam voluptatum aspernatur, veritatis eos optio nam sequi, libero ratione voluptatibus.</p>
-    <div className='flex flex-row text-xl p-3 m-3 flex-grow'>
+        <p className='px-2 mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptas natus culpa ratione iste magnam veritatis dolores in dignissimos quod ad nihil totam assumenda temporibus, sed amet
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque error autem, possimus voluptatum laudantium velit, quaerat dolores non corrupti necessitatibus temporibus laboriosam porro saepe ipsum fugit maxime laborum et deserunt?
+        </p>
+    <div className='px-2 text-xl'>
         <h1 className='text-blue-700'>Question</h1>
-        <p className='flex flex-col p-2 mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptas natus culpa ratione iste magnam veritatis dolores 
+        <p className=' px-2 mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptas natus culpa ratione iste magnam veritatis dolores 
         
         <math className='flex flex-row text-3xl p-2 m-2'>
     <mrow>
@@ -86,7 +88,8 @@ const Feed = () => {
         </p>
     </div>
     </div>
-<div className='flex-grow text-center flex-wrap gap-2 border border-gray-500 bg-sky-100'>
+    </div>
+<div className='flex-grow flex-wrap gap-2 border border-gray-500 bg-sky-100'>
   <div className='flex flex-row justify-center space-x-2 flex-grow border px-7 m-2'>
     <Image 
     src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
@@ -153,8 +156,8 @@ const Feed = () => {
     </div>
   </div>
     </div>
-    </div>
     </feed>
+    </>
   )
 }
 
